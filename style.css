@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-image: url(img.jpg);
+  min-height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+h1 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  background-color: rgba(236, 69, 69, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+h4 {
+  margin-bottom: 20px;
+  color: white;
+}
+.conatainer {
+  width: 50%;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  border: 10px inset red;
+  box-shadow: 0px 0px 10px 1px rgba(238, 237, 237, 1);
+}
+.parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  width: 43%;
+  min-height: 120px;
+  margin: 10px auto;
+  border: 10px outset brown;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px rgba(238, 237, 237, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  transition: all 0.3s linear;
+}
+.child:nth-child(1) {
+  background-color: rgb(243, 105, 105);
+}
+.child:nth-child(2) {
+  background-color: rgb(105, 105, 228);
+}
+.child:nth-child(3) {
+  background-color: rgb(248, 248, 126);
+}
+.child:nth-child(4) {
+  background-color: rgb(130, 238, 130);
+}
+button{
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin: 20px 0;
+    border: transparent;
+  box-shadow: 0px 0px 10px 1px rgba(238, 237, 237, 0.9);
+  font-weight: bold;
+} 
+.text{
+  overflow: hidden;
+  height: 0;
+  border: 10px outset white;
+}
+.text li{
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 20px;
+  text-align: left;
+  color: white;
+}
+.h-100{
+  height: 100%;
+}
+/* .child:active {
+  background: transparent;
+  color: white;
+} */
+.btn-flash{
+    background-color: transparent !important;
+}
+@media screen and (max-width: 567px) {
+  .conatainer {
+    width: 90%;
+    margin: 30px auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .text li{
+    font-size: 14px;
+  }
+}
